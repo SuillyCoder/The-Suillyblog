@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Playwrite+FR+Moderne:wght@100..400&display=swap');
+
+body{
+    font-family: "Dosis", cursive;
+    background-image: linear-gradient(#fffdfd, #e1e1e3, #c5c2c2);
+}
+.card{
+    background-color: #f4f4f4;
+}
+.cardText{
+    font-size: 17px;
+}
+
+.creationDate{
+    font-size: 100px;
+}
+
+.cardTitle{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.pageTitle{
+    font-weight: 700;
+}
+
+/* THIS IS THE SECTION FOR BUTTON STYLING BECAUSE THE DEFAULT BOOTSTRAP ONES ARE LIMITED, AND ON TOP OF THAT: SUCK */
+
+.button{
+    border-style:none;
+    border-radius: 7px;
+    padding: 8px;
+    margin-right: 1px;
+    margin-left: 1px;
+}
+.button:hover{
+    filter: brightness(105%);
+}
+.btnWrite{
+    background-color: #C8C4BB;
+}
+.btnDelete{
+    background-color: #807c83;
+}
+.btnRead{
+    background-color: #d1d0d0;
+}
+.btnEdit{
+    background-color: #e1dfe0;
+}
+
+.flexBG{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.flexBGHome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
