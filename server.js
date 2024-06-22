@@ -1,5 +1,6 @@
 const express = require('express');
 const methodOverride = require('method-override')
+const cors = require('cors');
 const mongoose = require("mongoose");
 const path = require('path')
 const Articles = require('./models/articleBank')
@@ -11,7 +12,7 @@ mongoose.connect('mongodb://localhost/blog')
 app.set('view engine', 'ejs')
 
 app.use(express.static(path.join(__dirname, 'public')));
-
+app.use(cors())
 app.use(express.urlencoded({ extended: false }))
 app.use(methodOverride('_method'))
 
