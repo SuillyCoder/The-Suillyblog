@@ -2,8 +2,11 @@
   "name": "blog-application",
   "version": "1.0.0",
   "main": "server.js",
+  "engines":{
+    "node": "18.x"
+  },
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "build": ""
   },
   "keywords": [],
