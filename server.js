@@ -7,7 +7,12 @@ const Articles = require('./models/articleBank')
 const articleRouter = require('./routes/articles')
 const app = express();
 
-mongoose.connect('mongodb://localhost/blog')
+
+const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost/blog';
+
+mongoose.connect(mongoURI)
+    .then(() => console.log('MongoDB connected'))
+    .catch(err => console.log('MongoDB connection error:', err));
 
 app.set('view engine', 'ejs')
 
@@ -30,3 +35,4 @@ app.listen(PORT, () => {
             http://localhost:${PORT}`
     );
 });
+
